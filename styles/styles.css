@@ -65,6 +65,7 @@ body {
 .button-user-link:active {
   opacity: 0.3;
 }
+
 .button-user-link:focus {
   background: #615048;
   border: 3px solid #83B3D3;
@@ -219,19 +220,22 @@ body {
   outline: none;
 }
 
-.navigation-link-icon:hover{
+.navigation-link-icon:hover {
   color: white;
 }
+
 .navigation-link-icon:active {
   color: white;
 }
+
 .navigation-favorit {
   position: absolute;
-width: 20px;
-height: 20px;
-left: 24px;
-top: 15px
+  width: 20px;
+  height: 20px;
+  left: 24px;
+  top: 15px
 }
+
 .navigation-link-icon {
   position: relative;
   display: block;
@@ -649,13 +653,15 @@ top: 15px
   display: block;
   padding-left: 40px;
 }
+
 .control-label {
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
+
 .control-mark {
   position: absolute;
   left: 0px;
@@ -665,22 +671,25 @@ line-height: 23px;
   background-color: #FFFFFF;
   border-radius: 4px;
 }
+
 .control:hover .control-mark {
   background: rgba(255, 255, 255, 0.6)
 }
+
 .control:focus .control-mark {
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
+
 .control:active .control-mark {
-background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.control-imput[type="radio"] + .control-mark {
+.control-imput[type="radio"]+.control-mark {
   border-radius: 50%;
 }
 
-.control-imput[type="radio"]:checked + .control-mark::before {
+.control-imput[type="radio"]:checked+.control-mark::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -690,6 +699,7 @@ background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   content: "";
 }
+
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1204,25 +1214,31 @@ background: rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
   cursor: pointer;
 }
-modal-container {
+
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0;
   display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
+
 .modal {
   position: relative;
   margin: auto;
-  padding: 40px;
   background-color: #ffffff;
 }
+
 .modal-auth {
   width: 715px;
-  height: 520px;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -1242,12 +1258,83 @@ modal-container {
 .modal-title {
   margin-left: 38px;
   font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 40px;
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
+
 .modal-container-close {
   display: none;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.humen {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appointment-submit {
+  width: 575px;
+  height: 60px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  background: #83B3D3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.field-group {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.modal-title {
+  margin: 0;
+  margin-left: 68px;
+  margin-top: 62px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.form-label {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 40px;
+margin-left: 70px;
+}
+.field-modal {
+  margin: 0;
+  margin-left: 35px;
+  margin-right: 70px;
+  width: 420px;
+  height: 50px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 40px;
+
 }
