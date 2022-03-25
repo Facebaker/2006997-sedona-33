@@ -65,6 +65,11 @@ body {
 .button-user-link:active {
   opacity: 0.3;
 }
+.button-user-link:focus {
+  background: #615048;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
 
 .button-search {
   width: 575px;
@@ -214,10 +219,19 @@ body {
   outline: none;
 }
 
-.navigation-link-icon:hover .navigation-icon {
-  fill: white;
+.navigation-link-icon:hover{
+  color: white;
 }
-
+.navigation-link-icon:active {
+  color: white;
+}
+.navigation-favorit {
+  position: absolute;
+width: 20px;
+height: 20px;
+left: 24px;
+top: 15px
+}
 .navigation-link-icon {
   position: relative;
   display: block;
@@ -626,12 +640,56 @@ body {
 }
 
 .catalog-products {
-
   margin-top: 45px;
   padding: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+.control-label {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+}
+.control-mark {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.6)
+}
+.control:focus .control-mark {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.control:active .control-mark {
+background: rgba(255, 255, 255, 0.3);
+}
 
+.control-imput[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-imput[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1145,4 +1203,51 @@ body {
   border: none;
   color: #FFFFFF;
   cursor: pointer;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);;
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+.modal-auth {
+  width: 715px;
+  height: 520px;
+}
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-left: 38px;
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+text-transform: uppercase;
+}
+.modal-container-close {
+  display: none;
 }
