@@ -482,7 +482,7 @@
           <p class="field-group appointment-form-date">
             <label class="form-label" for="appointment-date">
               Дата заезда:</label>
-            <input class="field-modal" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля.2020">
+            <input class="field-modal" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
           </p>
           <p class="field-group exit-form-date">
             <label class="form-label" for="exit-date">
@@ -491,12 +491,21 @@
           </p>
           <div class="humen">
           <p class="field-group appointment-form-adults">
-            <label class="form-label" for="adults">Взрослые</label>
-              <input type="number" name="adults" min="1" id="adults" value="2">
+            <label class="form-label" for="adults">Взрослые:</label>
+              <input class="humen-modal" type="number" name="adults" min="1" id="adults" value="2">
           </p>
           <p class="field-group appointment-form-children">
-            <label class="form-label" for="children">Дети</label>
-              <input type="number" name="children" min="0" id="children" value="1">
+            <span class="form-label">
+            <label class="form-label" for="children">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" >
+              <svg class="tooltip-icon" width="1" height="6" viewBox="0 0 1 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 6h1V0H0v6Z" fill="currentColor"/></svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br>которые будут с вами, возраст<br>которых от 6 до 18 лет. Дети<br>до 6 лет размещаются<br> бесплатно.</span>
+                </span>
+            </span>
+            </span>  
+              <input class="humen-modal" type="number" name="children" min="0" id="children" value="1">
           </p>
           <button class="button appointment-submit" type="submit">Найти</button>
         </div>

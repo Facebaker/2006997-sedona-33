@@ -95,6 +95,12 @@ body {
   opacity: 0.3;
 }
 
+.button-search:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
 .button-product-card {
   width: 140px;
   padding: 0;
@@ -842,7 +848,21 @@ body {
   align-items: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px
+  line-height: 21px;
+  cursor: pointer
+}
+
+.breadcrumbs:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.breadcrumbs:active {
+  opacity: 0.3;
 }
 
 .control-imput {
@@ -1147,6 +1167,11 @@ body {
   opacity: 0.3;
 }
 
+.number-phone:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
 .footer-social {
   width: 107px;
   padding-left: 72px;
@@ -1165,6 +1190,23 @@ body {
   margin-right: 30px;
 }
 
+.footer-social-item:hover {
+  color: #68A2CA;
+}
+
+.footer-social-item:active {
+  opacity: 0.3;
+}
+
+.footer-social-item:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.footer-logo-page:active {
+  opacity: 0.3;
+}
+
 .figure {
   position: absolute;
   width: 20px;
@@ -1173,9 +1215,6 @@ body {
   top: 15px;
 }
 
-.footer-social-item:hover svg {
-  fill: red;
-}
 
 .button-filter {
   width: 160px;
@@ -1215,7 +1254,7 @@ body {
   cursor: pointer;
 }
 
-.modal-container {
+modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -1314,15 +1353,18 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+  box-shadow: ;
 }
+
 .form-label {
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 40px;
-margin-left: 70px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  margin-left: 70px;
 }
+
 .field-modal {
   margin: 0;
   margin-left: 35px;
@@ -1332,9 +1374,82 @@ margin-left: 70px;
   background: #F2F2F2;
   border-radius: 4px;
   font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
 
+}
+
+.humen-modal {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  margin-left: 32px;
+  margin-bottom: 40px;
+  left: 507px;
+  top: 737px;
+  width: 126px;
+  height: 44px;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+..tooltip {}
+
+.tooltip-toggle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #83B3D3;
+  ;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-icon {
+  color: #FFFFFF;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  font-family: 'PT Sans';
+  width: 216px;
+  height: 110px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  padding: 15px 18px 18px 22px;
+  color: #FFFFFF;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
 }
